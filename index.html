@@ -15,67 +15,60 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <main class="main-container">
+      <nav class="navbar">
+        <ul class="nav-links text-white">
+          <li>Home</li>
+          <li>Product</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <div class="logo site-title">
+          <img src="./img/logo2.svg" alt="" />
+        </div>
+      </nav>
+
+      <div class="mobile-logo-and-ham">
+        <div class="logo site-title">
+          <img src="./img/logo2.svg" alt="" />
+        </div>
+        <div class="hamburger">
+          <img src="./img/ham.svg" alt="" />
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="nav-links text-white">
+          <li>Home</li>
+          <li>Product</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+        <ul class="social-links text-white font-lg">
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </div>
+
+      <div
+        class="main-content row flex-column justify-space-evenly align-center"
+      >
+        <h1 class="text-white text-center">
+          The best products start with Figma
+        </h1>
+        <p class="text-white text-center font-lg font-weight-sm">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </p>
+        <button class="btn-primary mt-3">Try for free</button>
+      </div>
+    </main>
+
+    <!-- Features -->
     <div class="container">
-      <main class="main-container">
-        <nav class="navbar">
-          <ul class="nav-links text-white">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-            <div class="logo site-title">
-              <img src="./img/logo2.svg" alt="" />
-            </div>
-          </ul>
-
-          <ul class="social-links text-white font-lg">
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-square-facebook"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-          </ul>
-        </nav>
-
-        <div class="mobile-logo-and-ham">
-          <div class="logo site-title">
-            <img src="./img/logo2.svg" alt="" />
-          </div>
-          <div class="hamburger">
-            <img src="./img/ham.svg" alt="" />
-          </div>
-        </div>
-        <div class="mobile-menu">
-          <ul class="nav-links text-white">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-
-          <ul class="social-links text-white font-lg">
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-square-facebook"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-          </ul>
-        </div>
-
-        <div
-          class="main-content row flex-column justify-space-evenly align-center"
-        >
-          <h1 class="text-white text-center">
-            The best products start with Figma
-          </h1>
-          <p class="text-white text-center font-lg font-weight-sm">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </p>
-          <button class="btn-primary mt-3">Try for free</button>
-        </div>
-      </main>
-
-      <!-- Features -->
-
       <section class="features">
         <div class="features-container">
           <h2 class="font-xxl font-weight-md text-center">Features</h2>
@@ -172,18 +165,27 @@
       </section>
 
       <section class="partners row flex-column justify-center align-center">
-        <h3 class="mt-4 font-xxl font-weight-md">Partners</h3>
-        <p class="mt-2 font-lg font-weight-sm-md text-center text-dark-grey">
+        <h3 class="font-xxl font-weight-md">Partners</h3>
+        <p class="mt-1 font-lg font-weight-sm-md text-center text-dark-grey">
           Most calendars are designed for teams. Slate is designed for
           freelancers
         </p>
 
-        <div class="partners-logos-container mt-4">
-          <img src="./img/partners-logos.png" alt="" />
-        </div>
+        <section class="partners-logos-container mt-4">
+          <div><img src="./img/google.svg" alt="" /></div>
+          <div><img src="./img/amazon.svg" alt="" /></div>
+          <div><img src="./img/microsoft.svg" alt="" /></div>
+          <div><img src="./img/uber.svg" alt="" /></div>
+          <div><img src="./img/dropbox.svg" alt="" /></div>
+          <div><img src="./img/google.svg" alt="" /></div>
+          <div><img src="./img/uber.svg" alt="" /></div>
+          <div><img src="./img/amazon.svg" alt="" /></div>
+        </section>
 
         <button class="btn-primary mt-4">Try for free</button>
       </section>
+
+      <!-- Testimonials -->
 
       <section
         class="testimonials row flex-column justify-center align-center mt-6"
@@ -200,7 +202,7 @@
         <div class="mt-3 customer-details row align-center">
           <img src="./img/customer.png" alt="" />
           <div class="user-name ml-1 font-md-lg">
-            <p>Organize across</p>
+            <p>Chris Smith</p>
             <p>UI Designer</p>
           </div>
         </div>
@@ -221,15 +223,17 @@
         </p>
 
         <section
-          class="pricing-cards-container row justify-space-around align-center mt-4"
+          class="pricing-cards-container row justify-space-around align-center mt-4 mb-4"
         >
           <div
             class="pricing-card bg-white row flex-column justify-space-between align-center"
           >
-            <span class="font-md-lg font-weight-xxxl">FREE</span>
-            <p class="text-center font-md-lg">
-              Organize across all apps by hand
-            </p>
+            <div class="pricing-card-free-text">
+              <span class="font-lg font-weight-xxxl">FREE</span>
+              <p class="text-center font-md-lg">
+                Organize across all apps by hand
+              </p>
+            </div>
             <div class="price row align-center">
               <span class="font-xxxxl font-weight-xxxl text-dark-blue mt-1"
                 >0</span
@@ -254,18 +258,18 @@
           <div
             class="standard-card pricing-card bg-primary row flex-column justify-space-between align-center"
           >
-            <span class="font-md-lg font-weight-xxxl">FREE</span>
-            <p class="text-center font-md-lg">
-              Organize across all apps by hand
-            </p>
+            <div class="pricing-card-free-text">
+              <span class="font-lg font-weight-xxxl">STANDARD</span>
+              <p class="text-center font-md-lg">
+                Organize across all apps by hand
+              </p>
+            </div>
             <div class="price row align-center">
-              <span class="font-xxxxl font-weight-xxxl text-dark-blue mt-1"
+              <span class="font-xxxxl font-weight-xxxl text-white mt-1"
                 >10</span
               >
               <div class="price-unit ml-1">
-                <span class="font-md-lg font-weight-xxxl text-dark-blue"
-                  >$</span
-                >
+                <span class="font-md-lg font-weight-xxxl text-white">$</span>
                 <p text-dark-blue>Per Month</p>
               </div>
             </div>
@@ -284,10 +288,12 @@
           <div
             class="pricing-card bg-white row flex-column justify-space-between align-center"
           >
-            <span class="font-md-lg font-weight-xxxl">FREE</span>
-            <p class="text-center font-md-lg">
-              Organize across all apps by hand
-            </p>
+            <div class="pricing-card-free-text">
+              <span class="font-lg font-weight-xxxl">BUSINESS</span>
+              <p class="text-center font-md-lg">
+                Organize across all apps by hand
+              </p>
+            </div>
             <div class="price row align-center">
               <span class="font-xxxxl font-weight-xxxl text-dark-blue mt-1"
                 >99</span
@@ -320,7 +326,7 @@
           freelancers
         </p>
 
-        <div class="contact-and-map row justify-space-between mt-3">
+        <div class="contact-and-map row mt-3">
           <div
             class="contact-card row flex-column justify-space-between align-center p-2"
           >
@@ -352,6 +358,12 @@
 
             <div class="locations-img-container mt-3">
               <img src="./img/map.png" alt="" />
+            </div>
+
+            <div class="locations-social-links">
+              <span class="fa-brands fa-twitter"></span>
+              <span class="fa-brands fa-square-facebook"></span>
+              <span class="fa-brands fa-linkedin"></span>
             </div>
           </div>
         </div>
@@ -410,7 +422,6 @@
             <span class="fa-brands fa-square-facebook"></span>
             <span class="fa-brands fa-linkedin"></span>
           </div>
-
         </div>
       </section>
     </footer>
